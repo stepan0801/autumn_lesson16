@@ -1,0 +1,269 @@
+@import "reset.css";
+/* =================шрифти===================== */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+
+body{font-family: "Lato";
+font-style: normal;
+color: #424551;
+	
+}
+.wrapper{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.wrapper>main {
+flex-grow: 1;
+}
+[class*="__container"]{
+	max-width: 1260px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.page {}
+/* ============================Стилі lesson=================================== */
+.lesson {
+	padding: 50px;
+	background-color: rgba(0, 0, 0, 0.699);
+	color: rgba(0, 0, 0, 0.699);
+}
+.form {
+	font-size: 24px;
+	font-weight: 700;
+}
+.form__line:not(:last-child) {
+	margin-bottom: 20px;
+}
+.form__input {
+	padding: 0 15px;
+	height: 50px;
+	font-size: 24px;
+	font-weight: 700;
+	color: green;
+}
+.form__input--chk{
+	width: auto;
+	vertical-align: middle;
+}
+.form__input::placeholder{
+	color: rgb(72, 163, 72);
+}
+.form__label{
+	display: inline-block;
+	margin-bottom: 10px;
+}
+.form__area{
+	width: 100%;
+	height: 150px;
+	padding: 15px;
+	resize: vertical;
+}
+
+.checkbox {
+	position: relative;
+}
+
+.checkbox__input {
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+
+/*
+.checkbox__input:focus + .checkbox__label{
+	outline: 1px solid #fff;
+	border-radius: 5px;
+}
+*/
+
+.checkbox__input:checked+.checkbox__label::before {
+	background: blue ;
+}
+
+.checkbox__label {
+	cursor: pointer;
+	display: inline-flex;
+	/* align-items: center; */
+	gap: 10px;
+}
+
+.checkbox__label::before {
+	content: "";
+	flex: 0 0 20px;
+	width: 20px;
+	height: 20px;
+	border-radius: 5px;
+	background-color: rgb(233, 77, 20);
+}
+
+.checkbox__text {
+	align-self: center;
+}
+/* ============================Стилі drop-us=================================== */
+.drop-us {
+	padding: 180px 0;
+}
+.drop-us__container{
+	display: flex;
+	justify-content: center;
+	gap: 105px;
+}
+.drop-us__image {
+	align-self: center;
+}
+.drop-us__image img{
+	width: 100%;
+}
+.drop-us__block {
+	
+}
+.drop-us__text{
+	margin-bottom: 40px;
+}
+.drop-us__text>:not(:last-child){
+	margin-bottom: 8px;
+}
+.drop-us__tittle {
+	font-weight: 700;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #1E212C;
+}
+.drop-us__sub-tittle {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	color: #1E212C;
+}
+.drop-us__form {}
+
+.sub-form {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	
+}
+.sub-form__block{
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 24px;
+	column-gap: 25px;
+	margin-bottom: 24px;
+}
+.sub-form__line {
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 340px;
+}
+.sub-form__label {
+	line-height: 1.6;
+	margin-bottom: 8px;
+	display: inline-block;
+}
+.sub-form__input {
+	box-sizing: border-box;
+	background: #FFFFFF;
+	border: 1px solid #D7DADD;
+	border-radius: 4px;
+	height: 52px;
+	padding: 13px 0 13px 16px;
+}
+[placeholder]{
+	line-height: 1.6;
+	color: #9A9CA5;
+}
+.sub-form__area{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 24px;
+}
+.sub-form__textarea {
+	box-sizing: border-box;
+	background: #FFFFFF;
+	border: 1px solid #D7DADD;
+	border-radius: 4px;
+	width: 100%;
+	padding: 13px 0 0 16px;
+	height: 128px;
+	resize: none;
+}
+
+.sub-form__send {
+	display: flex;
+	gap: 50px;
+}
+.send-checkbox {
+	position: relative;
+}
+.send-checkbox__input {
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+.send-checkbox__input:checked+.send-checkbox__label::before {
+	background: orangered url('../img/svg/check.svg') center / 70% no-repeat;
+}
+.send-checkbox__label {
+	cursor: pointer;
+	display: inline-flex;
+	gap: 15px;
+}
+.send-checkbox__label span{
+	line-height: 1.6;
+	margin-top: -6px;
+}
+.send-checkbox__label::before {
+	content: "";
+	flex: 0 0 16px;
+	width: 16px;
+	height: 16px;
+	border-radius: 2px;
+	background-color: orangered;
+}
+.button--width{
+	width: 340px;
+}
+
+.radio {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 48px;
+	gap: 15px;
+}
+.radio__tittle {}
+.radio__choose {
+display: inline-flex;
+position: relative;
+}
+.radio__input {
+position: absolute;
+width: 0;
+height: 0;
+opacity: 0;
+}
+.radio__input:checked+.radio__label::before {
+	background: orangered ;
+	
+}
+.radio__label {
+	cursor: pointer;
+	display: inline-flex;
+	gap: 15px;
+}
+.radio__label::before {
+	content: "";
+	flex: 0 0 16px;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background-color: wheat;
+}
+.radio__label{}

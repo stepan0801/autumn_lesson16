@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zxx">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>lesson_15</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/common.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header"></header>
+			<main class="page">
+				<div class="lesson">
+					<div class="lesson__container">
+						<form class="form" action="#">
+							<div class="form__line">
+								<label class="form__label" for="age">введіть Ваш вік</label>
+								<input id="age" class="form__input" placeholder="введіть Ваш вік" name="age" required type="text">
+							</div>
+							<div class="form__line">
+								<label class="form__label" for="e-mail">введіть Ваш e-mail</label>
+								<input id="e-mail" class="form__input" placeholder="введіть Ваш е-мейл" name="e-mail" required type="email">
+							</div>
+							<div class="form__line">
+								<label class="form__label" for="phone">введіть Ваш телефон</label>
+								<input id="phone" class="form__input" placeholder="введіть Ваш телефон" name="phone" required type="tel">
+							</div>
+							<div class="form__line">
+								<label class="form__label" for="pass">введіть Ваш пароль</label>
+								<input id="pass" class="form__input" placeholder="введіть Ваш пароль" name="pass" required type="password">
+							</div>
+							<div class="form__line"><input class="form__input" name="color" type="color"></div>
+							<div class="form__line"><input class="form__input" placeholder="пошук" name="search" required type="search"></div>
+							<div class="form__line"><input class="form__input" name="date" required type="date"></div>
+							<div class="form__line"><input class="form__input" name="choose" type="range"></div>
+							<div class="form__checkbox">
+								<input id="car" class="form__input form__input--chk" name="car" required type="checkbox">
+								<label class="form__label" for="car">Є авто?</label>
+							</div>
+							<div class="form__checkbox">
+								<input id="home" class="form__input form__input--chk" name="home" required type="checkbox">
+								<label class="form__label" for="home">Є де жити?</label>
+							</div>
+							<div class="form__line">
+								<div class="form__tittle">Улюблена тваринка</div>
+								<div class="form__radio">
+									<input id="pet-01" class="form__input form__input--chk" name="pet" required type="radio">
+									<label class="form__label" for="pet-01">Кішка</label>
+								</div>
+								<div class="form__radio">
+									<input id="pet-02" class="form__input form__input--chk" name="pet" required type="radio">
+									<label class="form__label" for="pet-02">Собака</label>
+								</div>
+							</div>
+							<div class="form__line"><input class="form__input" name="choose" required type="file"></div>
+							<div class="form__line">
+								<textarea class="form__area" name="message" cols="30" rows="10"></textarea>
+							</div>
+							<div class="form__line">
+								<select name="list">
+									<option value="1">Пункт 1</option>
+									<option value="2">Пункт 2</option>
+									<option value="3">Пункт 3</option>
+									<option value="4">Пункт 4</option>
+									<option value="5">Пункт 5</option>
+								</select>
+							</div>
+							<div class="form__line">
+								<button class="button">Я кнопка</button>
+							</div>
+							<div class="checkbox">
+								<input id="car-01" type="checkbox" value="yes" name="car" class="checkbox__input">
+								<label for="car-01" class="checkbox__label"><span class="checkbox__text">Є тачка?</span></label>
+							</div>
+						</form>
+					</div>
+				</div>
+				<section class="drop-us">
+					<div class="drop-us__container">
+						<div class="drop-us__image">
+							<img src="img/svg/woman.svg" alt="woman">
+						</div>
+						<div class="drop-us__block">
+							<div class="drop-us__text">
+								<h2 class="drop-us__tittle">Any questions?</h2>
+								<h3 class="drop-us__sub-tittle">Drop us a line</h3>
+							</div>
+							<form class="drop-us__form sub-form">
+								<div class="sub-form__block">
+									<div class="sub-form__line">
+										<label for="name" class="sub-form__label">First Name*</label>
+										<input id="name" type="text" class="sub-form__input" name="name" placeholder="Your first name">
+									</div>
+									<div class="sub-form__line">
+										<label for="surname" class="sub-form__label">Last Name*</label>
+										<input id="surname" type="text" required class="sub-form__input" name="surname" placeholder="Your last name">
+									</div>
+									<div class="sub-form__line">
+										<label for="email" class="sub-form__label">Email*</label>
+										<input id="email" type="email" required class="sub-form__input" name="email" placeholder="Your working email">
+									</div>
+									<div class="sub-form__line">
+										<label for="phone-01" class="sub-form__label">Phone</label>
+										<input id="phone-01" type="tel" class="sub-form__input" name="phone" placeholder="Your phone number">
+									</div>
+								</div>
+								<div class="sub-form__area">
+									<label for="message" class="sub-form__label">Message*</label>
+									<textarea id="message" required class="sub-form__textarea" name="message" placeholder="Your message"></textarea>
+								</div>
+								<div class="sub-form__radio radio">
+									<div class="radio__tittle">Do you have a car?</div>
+									<div class="radio__choose">
+										<input checked id="car-yes" type="radio" required name="car" class="radio__input" value="Yes">
+										<label for="car-yes" class="radio__label">Yes</label>
+									</div>
+									<div class="radio__choose">
+										<input id="car-no" type="radio" required name="car" class="radio__input" value="No">
+										<label for="car-no" class="radio__label">No</label>
+									</div>
+								</div>
+								<div class="sub-form__send">
+									<div class="sub-form__checkbox send-checkbox">
+										<input id="check" type="checkbox" class="send-checkbox__input" name="check">
+										<label for="check" class="send-checkbox__label"><span>I agree to receive communications from Createx Online School</span></label>
+									</div>
+									<div class="sub-form__button"><button type="submit" class="button button--width">Send message</button></div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+			</footer>
+		</div>
+	</body>
+</html>
